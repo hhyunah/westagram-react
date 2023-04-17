@@ -1,0 +1,224 @@
+@font-face {
+    font-family: "Lobster";
+    src: url(./Lobster-Regular.ttf) format("opentype");
+}
+
+body{
+    padding:0%;
+    background-color:rgb(245, 245, 245);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px;
+
+    border-bottom: 1px solid gainsboro;
+    background-color: white;
+
+    font-family:"Lobster";
+    font-size: 30pt;
+}
+
+.nav_part{
+    display: flex;
+    align-items: center;
+}
+
+
+.westagram_logo{
+    margin-left: 20px;
+    padding-left: 10px;
+
+    border-left: 2px solid black;
+}
+
+input[id='search']{
+    text-align: center;
+}
+
+main{
+    display:flex;
+}
+
+.main-feeds{
+    width: 60%;
+
+    padding-left: 20%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    background-color:rgb(245, 245, 245);
+}
+
+article{
+    width: 500px;
+
+    border: 1px solid gainsboro;
+    background-color: white;
+}
+
+.article_head{
+    display: flex; 
+    justify-content: space-between; 
+
+    padding: 10px;
+}
+
+.article_profile{
+    display: flex;
+    align-items: center;
+}
+
+.article_react_icon{
+    display:flex;
+    justify-content: space-between;
+
+    padding:7px;
+}
+.article_react_icon i{
+    font-size: 30px;
+}
+
+.article_react_icon_right{
+    display:flex;
+    justify-content: space-between;
+
+    width: 120px;
+}
+
+.article_like{
+    display: flex;
+    align-items: center;
+    
+    padding:7px;
+    padding-top: 0;
+}
+
+.article_content{
+    display: flex;
+
+    padding: 7px;
+    padding-bottom: 0;
+}
+
+.article_content_more{
+    display: flex;
+    align-items:end;
+
+    color:gray;
+    font-size: 14px;
+
+}
+
+.article_reply{
+    padding:7px;
+    padding-bottom: 0;
+}
+
+.article_reply_add{
+    display: flex;
+    justify-content: space-between;
+}
+
+.article_time{
+    padding-left:7px;
+    padding-bottom: 7px;
+
+    border-bottom: 1px solid gainsboro;
+
+    color:gray;
+}
+
+.article_reply_input{
+    display: flex;
+    justify-content: space-between;
+
+    padding:7px;
+}
+
+.reply_txt{
+    width:90%;
+
+    border:none;
+    outline:none;
+}
+
+
+.reply_button{
+    border:none;
+    background-color: white;
+    outline:none;
+}
+
+
+.main-right{
+    flex-grow: 1;
+
+    padding-left: 1%;
+    padding-top:50px;
+
+    background-color:rgb(245, 245, 245);
+}
+
+.side_profile{
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+.profile_id{
+    padding-left: 10px;
+}
+
+.story{
+    width: 250px;
+
+    margin-bottom: 10px;
+    padding: 10px;
+
+    border: 1px solid gainsboro;
+    background-color: white;
+}
+
+.story_domain{
+    display:flex;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+.story_profile{
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+.recommendation{
+    width: 250px;
+
+    margin-bottom: 10px;
+    padding: 10px;
+
+    border: 1px solid gainsboro;
+    background-color: white;
+}
+
+.recommendation_domain{
+    display:flex;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+.recommendation_profile{
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+
