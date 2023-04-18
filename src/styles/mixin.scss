@@ -1,0 +1,9 @@
+@mixin flexSort($justify, $alignItemts) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $alignItemts;
+}
+
+@mixin circleBorder{
+    border-radius: 70%;
+}

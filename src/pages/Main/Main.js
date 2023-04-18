@@ -1,20 +1,21 @@
+import React from 'react'
 import InstaIcon from '../../assets/instaicon.png'
 import ExploreIcon from '../../assets/explore.png'
 import heartIcon from '../../assets/heart.png'
 import profileIcon from '../../assets/profile.png'
+import './Main.scss';
 
 
 
-
-function Main () {
+const Main = () => {
     // const imgFile = '/images/'
 
     return (
-    <>
+    <div className = 'main'>
         <nav>
             <span className = 'nav_part'>
                 <img alt = 'instagram icon' src = {InstaIcon} className = 'instagramIcon' width = '40'></img>
-                <span class= 'westagram_logo'>westagram</span>
+                <span class= 'westagram_logo'>&nbsp;westagram</span>
             </span>
 
             <span className = 'nav_part'>
@@ -33,7 +34,7 @@ function Main () {
                 <article>
                     <div className = 'article_head'>
                         <div className = 'article_profile'>
-                            <img alt = 'mickey_profile' src = '/images/mickey_profile.jpg' width = '25'></img>
+                            <img className = 'mickey_profile_img' alt = 'mickey_profile' src = '/images/mickey_profile.jpg' width = '25'></img>
                             <b>&nbsp;hhyunah</b>
                         </div>
 
@@ -43,11 +44,11 @@ function Main () {
 
                     </div>
 
-                    <img alt = 'brunch' src = '/images/brunch.jpg' width = '500px'></img>
+                    <img className= 'article_main_img' alt = 'brunch' src = '/images/brunch.jpg' width = '500px'></img>
 
                     <div className = 'article_react_icon'>
                         <div className = 'article_react_icon_right'>
-                            <i className="fa-solid fa-heart" ></i>
+                            <i className="fa-solid fa-heart" id = 'article_react_icon_heart'></i>
                             <i class="fa-regular fa-comment"></i>
                             <i class="fa-solid fa-arrow-up-from-bracket"></i>
                         </div>
@@ -58,9 +59,10 @@ function Main () {
                     </div>
 
                     <div className ='article_like'>
-                        <img alt = 'icecream' src = '/images/icecream.jpg' width = '25'></img>
+                        <img className = 'icecream_profile_img' alt = 'icecream' src = '/images/icecream.jpg' width = '25'></img>
 
                         <span>
+                            &nbsp;
                             <b>mickey</b> 님
                             <b>외 10명</b> 이 좋아합니다. 
                         </span>
@@ -104,9 +106,9 @@ function Main () {
 
             <div className = 'main-right'>
                 <div className = 'side_profile'>
-                    <img alt = 'mm' src="/images/mm.jpg" width='60'></img>
+                    <img className = 'side_profile_img' alt = 'mm' src="/images/mm.jpg" width='60'></img>
 
-                    <div className = 'profile_id'>
+                    <div className = 'side_profile_id'>
                         <b>olive</b>
                         <span>Hyunah Park</span>
                     </div>
@@ -119,27 +121,27 @@ function Main () {
                     </div>
 
                     <div className = 'story_profile'>
-                        <img alt = 'icecream' src="/images/icecream.jpg" width='50'></img>
+                        <img className = 'story_profile_id_img' alt = 'icecream' src="/images/icecream.jpg" width='50'></img>
         
-                        <div className = 'profile_id'>
+                        <div className = 'story_profile_id'>
                             <b>hhyunah</b>
                             <span>Hyunah Park</span>
                         </div>
                     </div>
 
                     <div className = 'story_profile'>
-                        <img alt = 'icecream' src="/images/icecream.jpg" width='50'></img>
+                        <img className = 'story_profile_id_img' alt = 'icecream' src="/images/icecream.jpg" width='50'></img>
         
-                        <div className = 'profile_id'>
+                        <div className = 'story_profile_id'>
                             <b>hhyunah</b>
                             <span>Hyunah Park</span>
                         </div>
                     </div>
 
                     <div className = 'story_profile'>
-                        <img alt = 'icecream' src="/images/icecream.jpg" width='50' ></img>
+                        <img className = 'story_profile_id_img' alt = 'icecream' src="/images/icecream.jpg" width='50' ></img>
         
-                        <div className = 'profile_id'>
+                        <div className = 'story_profile_id'>
                             <b>hhyunah</b>
                             <span>Hyunah Park</span>
                         </div>
@@ -153,27 +155,27 @@ function Main () {
                     </div>
 
                     <div className = 'recommendation_profile'>
-                        <img alt = 'icecream' src="/images/icecream.jpg" width='50'></img>
+                        <img className = 'rec_profile_id_img' alt = 'icecream' src="/images/icecream.jpg" width='50'></img>
         
-                        <div className = 'profile_id'>
+                        <div className = 'rec_profile_id'>
                             <b>hhyunah</b>
                             <span>Hyunah Park</span>
                         </div>
                     </div>
 
                     <div className = 'recommendation_profile'>
-                        <img alt = 'icecream' src="/images/icecream.jpg" width='50'></img>
+                        <img className = 'rec_profile_id_img' alt = 'icecream' src="/images/icecream.jpg" width='50'></img>
         
-                        <div className = 'profile_id'>
+                        <div className = 'rec_profile_id'>
                             <b>hhyunah</b>
                             <span>Hyunah Park</span>
                         </div>
                     </div>
 
                     <div className = 'recommendation_profile'>
-                        <img alt = 'icecream' src="/images/icecream.jpg" width='50'></img>
+                        <img className = 'rec_profile_id_img' alt = 'icecream' src="/images/icecream.jpg" width='50'></img>
         
-                        <div className = 'profile_id'>
+                        <div className = 'rec_profile_id'>
                             <b>hhyunah</b>
                             <span>Hyunah Park</span>
                         </div>
@@ -183,7 +185,7 @@ function Main () {
             </div>
 
         </main>
-    </>
+    </div>
  
     );
 }
