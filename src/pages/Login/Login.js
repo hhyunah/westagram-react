@@ -1,31 +1,45 @@
 import React from "react";
-import './Login.scss';
+import "./Login.scss";
 import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    const handleButton = () => {
-        navigate('/main');
-    }
+  const handleButton = () => {
+    navigate("/main");
+  };
 
-    return (
-        <div className = 'login'>
-            <div className = 'loginBox'>
-                <h1 className='logo'>Westagram</h1>
-                
-                <div className = 'inputPart' id = 'inputPart'>
-                    <input className = 'id' type ='text' placeholder=" 전화번호, 사용자 이름 또는 이메일"></input>
-                    <input className = 'password' type = 'password' required placeholder = ' 비밀번호'></input>
-                    <input className = 'button' type = 'button' value = '로그인' onClick={handleButton}></input>
-                </div>
+  return (
+    <div className="login">
+      <div className="loginBox">
+        <h1 className="logo">Westagram</h1>
 
-                <div class = 'helpPart'>
-                    <h2 className='forget'>비밀번호를 잊으셨나요?</h2>
-                </div>
-            </div>
+        <div className="inputPart" id="inputPart">
+          <input
+            className="id"
+            type="text"
+            placeholder=" 전화번호, 사용자 이름 또는 이메일"
+          ></input>
+          <input
+            className="password"
+            type="password"
+            required
+            placeholder=" 비밀번호"
+          ></input>
+          <input
+            className="button"
+            type="button"
+            value="로그인"
+            onClick={handleButton}
+          ></input>
         </div>
-    );
-}
+
+        <div class="helpPart">
+          <h2 className="forget">비밀번호를 잊으셨나요?</h2>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default Login;

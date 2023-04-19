@@ -1,9 +1,13 @@
 @mixin flexSort($justify, $alignItemts) {
-    display: flex;
-    justify-content: $justify;
-    align-items: $alignItemts;
+  display: flex;
+  justify-content: $justify;
+  align-items: $alignItemts;
 }
 
-@mixin circleBorder{
-    border-radius: 70%;
+@mixin circleBorder {
+  border-radius: 70%;
+}
+
+@mixin bold {
+  font-weight: bold;
 }
