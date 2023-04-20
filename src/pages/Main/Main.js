@@ -6,8 +6,6 @@ import profileIcon from "../../assets/profile.png";
 import "./Main.scss";
 
 const Main = () => {
-  // const imgFile = '/images/'
-
   return (
     <div className="main">
       <nav className="navPart">
